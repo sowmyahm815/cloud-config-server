@@ -16,3 +16,7 @@ eureka:
     endpoints:
       endpoint:
         uri: http://CustomerService/Customer/message
+  product-service:
+    endpoints:
+      endpoint:
+        uri: http://ProductService/Product/Product
