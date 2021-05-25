@@ -1,0 +1,18 @@
+eureka:
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    preferIpAddress: true
+ 
+ microservice:
+  payment-service:
+    endpoints:
+      endpoint:
+        uri: http://PaymentService/Payment/message
+  customer-service:
+    endpoints:
+      endpoint:
+        uri: http://CustomerService/Customer/message
