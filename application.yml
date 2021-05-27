@@ -1,3 +1,15 @@
+datasource:
+    driverClassName: oracle.jdbc.driver.OracleDriver
+    password: admin
+    url: jdbc:oracle:thin:@localhost:1521:xe
+    username: SYSTEM
+  jpa:
+   hibernate:
+      ddl-auto: update
+   properties:
+      hibernate:
+        dialect: org.hibernate.dialect.Oracle10gDialect
+   show-sql: true
 eureka:
   client:
     registerWithEureka: true
